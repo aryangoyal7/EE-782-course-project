@@ -1,0 +1,37 @@
+model:
+  dinov3_model: "dinov2_vitb14"
+  dinov3_pretrained_path: ""  # Leave empty to use timm pretrained weights
+  dinov3_patch_size: 14
+  
+  sam3d_checkpoint_path: ""  # Path to SAM-3D checkpoint
+  sam3d_model_type: "sam3d_vit_h"
+  
+  fusion_hidden_dims: [512, 256, 128]
+  fusion_dropout: 0.1
+  num_classes: 10
+  use_consistency_loss: true
+
+data:
+  dataset_name: "shapenet"  # or "pix3d"
+  data_root: "./data"
+  voxel_resolution: 64
+  image_size: [224, 224]
+  num_views: 4
+  train_split: 0.8
+  val_split: 0.1
+  test_split: 0.1
+
+training:
+  batch_size: 8
+  num_epochs: 50
+  learning_rate: 0.0001
+  weight_decay: 0.00001
+  optimizer: "adam"
+  scheduler: "cosine"
+  warmup_epochs: 5
+  save_dir: "./checkpoints"
+  log_dir: "./logs"
+  save_freq: 5
+  eval_freq: 1
+  seed: 42
+
