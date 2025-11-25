@@ -335,30 +335,8 @@ If you use this code in your research, please cite:
 
 See `docs/citations.bib` for full bibliography.
 
-## Contact and Contributions
 
-### Contact
 
-For questions or issues, please open an issue on GitHub or contact:
-- Email: [your-email@example.com]
-- GitHub: [@yourusername]
-
-### Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Code Style
-
-- Follow PEP 8 style guidelines
-- Use type hints where appropriate
-- Add docstrings to all functions and classes
-- Write tests for new functionality
 
 ### Testing
 
